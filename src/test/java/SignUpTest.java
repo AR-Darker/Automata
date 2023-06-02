@@ -30,4 +30,28 @@ public class SignUpTest {
         //5. Закрыть браузер
         driver.quit();
     }
+
+
+
+@Test
+public void zipCodeShouldNotAccept4Digits(){
+
+    System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
+
+    WebDriver driver = new ChromeDriver();
+    driver.get("https://www.sharelane.com/cgi-bin/register.py");
+
+    WebElement zipCodeInput = driver.findElement(By.name("zip_code"));
+    zipCodeInput.sendKeys("1234");
+
+    WebElement continueButton = driver.findElement(By.cssSelector("[value=Continue]"));
+    continueButton.click();
+
+    WebElement errorMessage = driver.findElement((By.cssSelector("[class='error_message']")));
+    boolean isDisplayed = errorMessage.isDisplayed();
+    Assert.assertTrue(isDisplayed, "Дальше система не пустила");
+
+    driver.quit();
 }
+}
+
