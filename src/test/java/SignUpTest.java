@@ -49,7 +49,7 @@ public void zipCodeShouldNotAccept4Digits(){
 
     WebElement errorMessage = driver.findElement((By.cssSelector("[class='error_message']")));
     boolean isDisplayed = errorMessage.isDisplayed();
-    Assert.assertTrue(isDisplayed, "Дальше система не пустила");
+    Assert.assertTrue(isDisplayed, "Текст errormessage получен");
 
     driver.quit();
 }
