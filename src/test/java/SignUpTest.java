@@ -49,6 +49,7 @@ public void zipCodeShouldNotAccept4Digits(){
 
     WebElement errorMessage = driver.findElement((By.cssSelector("[class='error_message']")));
     boolean isDisplayed = errorMessage.isDisplayed();
+    //проверить сообщение ошибки + сравнить сообщения()
     Assert.assertTrue(isDisplayed, "Текст errormessage получен");
 
     driver.quit();
