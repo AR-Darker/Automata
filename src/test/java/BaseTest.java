@@ -10,7 +10,7 @@ public class BaseTest {
     WebDriver driver;
 
 @BeforeMethod
-// нужно закинуть понигарсия или как его там
+// а почему именно метод а не тест
 public void setUp(){
     WebDriverManager.chromedriver().setup();
     ChromeOptions options = new ChromeOptions();
