@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import java.sql.Driver;
 
 public class SignUpTest {
-
+    //базовый тест сделать+ повторяющиеся локаторы вынести в поля
 
     @Test
     public void zipCodeShouldAccept5Digits(){
@@ -34,7 +34,7 @@ public class SignUpTest {
 
 
 @Test
-public void zipCodeShouldNotAccept4Digits(){
+public void zipCodeShouldNotAccept4Digits() {
 
     System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 
@@ -52,7 +52,7 @@ public void zipCodeShouldNotAccept4Digits(){
     //проверить сообщение ошибки + сравнить сообщения()
     Assert.assertTrue(isDisplayed, "Текст errormessage получен");
 
-    driver.quit();
-}
-}
+//    driver.quit();
+//}
+}}
 
