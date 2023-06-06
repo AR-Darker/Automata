@@ -12,7 +12,7 @@ public class BaseTest {
 @BeforeMethod
 // нужно закинуть понигарсия или как его там
 public void setUp(){
-    WebDriverManager.chromedriver().setup;
+    WebDriverManager.chromedriver().setup();
     ChromeOptions options = new ChromeOptions();
     options.addArguments("--start-maximized");
     driver = new ChromeDriver(options);
