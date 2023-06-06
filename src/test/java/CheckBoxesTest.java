@@ -16,7 +16,7 @@ public class CheckBoxesTest extends BaseTest{
         assertFalse(checkBoxes.get(0).isSelected());
 
         checkBoxes.get(0).click();
-        assertTrue(checkBoxes.get(0).isSelected());//почему мне пишет какойто кондишн
+        assertTrue(checkBoxes.get(0).isSelected());
 
 
 
