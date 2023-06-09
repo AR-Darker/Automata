@@ -25,6 +25,7 @@ public void setUp(){
 }
 
 @AfterMethod(alwaysRun = true)
-public void tearDown(){
+public void tearDown() {
+    driver.close();
     driver.quit();
 }}
