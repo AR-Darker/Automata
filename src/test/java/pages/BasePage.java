@@ -5,9 +5,9 @@ import org.openqa.selenium.WebDriver;
 
 
 public class BasePage {
-    WebDriver Driver;
+    WebDriver driver;
 
     public BasePage(WebDriver driver) {
-         Driver = driver;
+         this.driver = driver;
     }
 }

@@ -1,5 +1,6 @@
 package tests;
 
+import pages.Inventorypage;
 import pages.LoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -13,6 +14,7 @@ public class BaseTest1 {
 
     WebDriver driver;
     LoginPage loginPage;
+    Inventorypage inventoryPage;
 
 @BeforeMethod
 
@@ -24,12 +26,13 @@ public void setUp(){
     driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
     loginPage = new LoginPage(driver);
+    inventoryPage = new Inventorypage(driver);
 
 
 }
 
 @AfterMethod(alwaysRun = true)
 public void tearDown() {
-    driver.close();
+
     driver.quit();
 }}
