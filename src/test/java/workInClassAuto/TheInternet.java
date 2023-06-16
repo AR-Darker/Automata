@@ -1,3 +1,5 @@
+package workInClassAuto;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,7 +11,7 @@ import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 
-public class TheInternet extends BaseTest{
+public class TheInternet extends BaseTest {
 //DropDown TEST
     @Test
     public void checkDropDown() {

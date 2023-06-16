@@ -1,4 +1,4 @@
-import org.testng.annotations.Test;
+package workInClassAuto;
 
 public class ShoppintCartTest {
 

@@ -1,3 +1,5 @@
+package workInClassAuto;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -7,7 +9,7 @@ import java.util.List;
 import static org.testng.AssertJUnit.assertFalse;//поменять на test NG, поэтому ошибка
 import static org.testng.AssertJUnit.assertTrue;//
 
-public class CheckBoxesTest extends BaseTest{
+public class CheckBoxesTest extends BaseTest {
 
     @Test
     public void checkCheckboxes(){

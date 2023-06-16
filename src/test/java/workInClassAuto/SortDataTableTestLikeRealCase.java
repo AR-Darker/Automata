@@ -1,3 +1,5 @@
+package workInClassAuto;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -8,7 +10,7 @@ import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 
-public class SortDataTableTestLikeRealCase extends BaseTest{
+public class SortDataTableTestLikeRealCase extends BaseTest {
 
     @Test
     public void checkSortTable(){
