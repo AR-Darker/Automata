@@ -12,7 +12,7 @@ public class Inventorypage extends BasePage {
         super(driver);
     }
     public void addItemInCartByItemName(String itemName){
-        driver.findElements(By.xpath(String.format(addButtonByItemName,itemName))).click();
+        driver.findElement(By.xpath(String.format(addButtonByItemName,itemName))).click();
 
     }
     public boolean titleIsVisible(){

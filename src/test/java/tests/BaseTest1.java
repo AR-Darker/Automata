@@ -24,7 +24,7 @@ public void setUp(){
 
     driver.manage().window().maximize();
     driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
+//не забудь иницализировать страницы
     loginPage = new LoginPage(driver);
     inventoryPage = new Inventorypage(driver);
 
