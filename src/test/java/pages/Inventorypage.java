@@ -6,8 +6,14 @@ import org.openqa.selenium.WebDriver;
 public class Inventorypage extends BasePage {
 
     public static final By INVENTORY_TITLE =By.xpath("//span[@class = 'title' and text() = 'Products']");
+    String addButtonByItemName = "//div[text() = '%s']//ancestor::div[@class = 'inventory_item']//button";
+
     public Inventorypage(WebDriver driver) {
         super(driver);
+    }
+    public void addItemInCartByItemName(String itemName){
+        driver.findElements(By.xpath(String.format(addButtonByItemName,itemName))).click();
+
     }
     public boolean titleIsVisible(){
         return driver.findElement(INVENTORY_TITLE).isDisplayed();
