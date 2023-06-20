@@ -56,7 +56,7 @@ public class LoginTest extends BaseTest1 {
 
 
         Actions actions = new Actions(driver);
-        actions.
+        actions.click();
 
     }
 

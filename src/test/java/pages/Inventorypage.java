@@ -3,7 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class Inventorypage extends  BasePage {
+public class Inventorypage extends BasePage {
 
     public static final By INVENTORY_TITLE =By.xpath("//span[@class = 'title' and text() = 'Products']");
     String addButtonByItemName = "//div[text() = '%s']//ancestor::div[@class = 'inventory_item']//button";
